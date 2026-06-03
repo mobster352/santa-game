@@ -9,20 +9,31 @@
 [ext_resource type="Script" uid="uid://4xs8hy5lpw0p" path="res://entities/player/states/jump_state.gd" id="7_qiwj3"]
 [ext_resource type="Script" uid="uid://dtvk4r7feawnd" path="res://entities/player/states/punch_state.gd" id="8_26q78"]
 [ext_resource type="Script" uid="uid://4srbw3g5q0nr" path="res://entities/player/states/sprint_state.gd" id="9_bectd"]
+[ext_resource type="Script" uid="uid://7rs68h4dl8r5" path="res://entities/player/states/crouch_state.gd" id="10_6oylw"]
+[ext_resource type="Script" uid="uid://bktmcojp37rk5" path="res://entities/player/states/crouch_walk_state.gd" id="11_u3c1g"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_symyc"]
-radius = 0.24658203
+radius = 0.42919922
 height = 1.7910156
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_abrql"]
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u3c1g"]
+radius = 0.43115234
+height = 1.1014404
 
 [node name="Player" type="CharacterBody3D" unique_id=1040654554]
 collision_layer = 2
 script = ExtResource("1_abrql")
 
 [node name="Collider" type="CollisionShape3D" parent="." unique_id=822177160]
+unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8955078, 0)
 shape = SubResource("CapsuleShape3D_symyc")
+
+[node name="CrouchCollider" type="CollisionShape3D" parent="." unique_id=1284947554]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5507202, 0)
+shape = SubResource("CapsuleShape3D_u3c1g")
+disabled = true
 
 [node name="PlayerSkin" parent="." unique_id=1455300900 instance=ExtResource("1_symyc")]
 unique_name_in_owner = true
@@ -38,8 +49,7 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0
 unique_name_in_owner = true
 
 [node name="SpringArm3D" type="SpringArm3D" parent="CameraRoot/CameraYawPivot/CameraPitchPivot" unique_id=398206653]
-shape = SubResource("SphereShape3D_abrql")
-spring_length = 2.5
+spring_length = 2.0
 
 [node name="Camera3D" type="Camera3D" parent="CameraRoot/CameraYawPivot/CameraPitchPivot/SpringArm3D" unique_id=141714741]
 current = true
@@ -47,19 +57,21 @@ current = true
 [node name="StateMachine" parent="." unique_id=1462221124 node_paths=PackedStringArray("initial_state") instance=ExtResource("3_sglur")]
 initial_state = NodePath("Idle")
 
-[node name="Idle" parent="StateMachine" unique_id=311346312 node_paths=PackedStringArray("walk_state", "jump_state", "punch_state", "sprint_state") instance=ExtResource("4_fkugw")]
+[node name="Idle" parent="StateMachine" unique_id=311346312 node_paths=PackedStringArray("walk_state", "jump_state", "punch_state", "sprint_state", "crouch_state") instance=ExtResource("4_fkugw")]
 script = ExtResource("5_8fjmc")
 walk_state = NodePath("../Walk")
 jump_state = NodePath("../Jump")
 punch_state = NodePath("../Punch")
 sprint_state = NodePath("../Sprint")
+crouch_state = NodePath("../Crouch")
 
-[node name="Walk" parent="StateMachine" unique_id=190480083 node_paths=PackedStringArray("idle_state", "jump_state", "punch_state", "sprint_state") instance=ExtResource("4_fkugw")]
+[node name="Walk" parent="StateMachine" unique_id=190480083 node_paths=PackedStringArray("idle_state", "jump_state", "punch_state", "sprint_state", "crouch_walk_state") instance=ExtResource("4_fkugw")]
 script = ExtResource("6_8fjmc")
 idle_state = NodePath("../Idle")
 jump_state = NodePath("../Jump")
 punch_state = NodePath("../Punch")
 sprint_state = NodePath("../Sprint")
+crouch_walk_state = NodePath("../CrouchWalk")
 
 [node name="Jump" parent="StateMachine" unique_id=1018540112 node_paths=PackedStringArray("idle_state") instance=ExtResource("4_fkugw")]
 script = ExtResource("7_qiwj3")
@@ -75,3 +87,13 @@ idle_state = NodePath("../Idle")
 jump_state = NodePath("../Jump")
 punch_state = NodePath("../Punch")
 walk_state = NodePath("../Walk")
+
+[node name="Crouch" parent="StateMachine" unique_id=2099318779 node_paths=PackedStringArray("idle_state", "crouch_walk_state") instance=ExtResource("4_fkugw")]
+script = ExtResource("10_6oylw")
+idle_state = NodePath("../Idle")
+crouch_walk_state = NodePath("../CrouchWalk")
+
+[node name="CrouchWalk" parent="StateMachine" unique_id=1283071045 node_paths=PackedStringArray("walk_state", "crouch_state") instance=ExtResource("4_fkugw")]
+script = ExtResource("11_u3c1g")
+walk_state = NodePath("../Walk")
+crouch_state = NodePath("../Crouch")

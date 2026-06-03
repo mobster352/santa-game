@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://qap0chsrecb7"]
+
+[node name="Wall" type="CSGBox3D" unique_id=1302981257]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0.25)
+size = Vector3(1, 1, 0.5)

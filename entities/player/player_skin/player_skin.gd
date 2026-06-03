@@ -11,7 +11,7 @@ func _ready() -> void:
 
 func idle_animation() -> void:
 	movement_state_machine.travel("Idle")
-	
+
 func walk_animation() -> void:
 	movement_state_machine.travel("Walk")
 
@@ -26,6 +26,12 @@ func jump_start_animation() -> void:
 
 func jump_land_animation() -> void:
 	movement_state_machine.travel("Jump_Land")
+
+func crouch_idle_animation() -> void:
+	movement_state_machine.travel("Crouch_Idle")
+
+func crouch_walk_animation() -> void:
+	movement_state_machine.travel("Crouch_Fwd")
 
 
 func _on_animation_tree_animation_finished(anim_name: StringName) -> void:

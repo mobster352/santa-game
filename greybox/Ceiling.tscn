@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bc7kwml4nkkph"]
+
+[node name="Ceiling" type="CSGBox3D" unique_id=1282020192]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 1)
+size = Vector3(1, 0.5, 2)

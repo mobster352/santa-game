@@ -4,6 +4,7 @@ extends State
 @export var jump_state: State
 @export var punch_state: State
 @export var sprint_state: State
+@export var crouch_walk_state: State
 
 func enter() -> void:
 	player.speed = player.WALK_SPEED
@@ -15,6 +16,10 @@ func physics_update(delta: float) -> void:
 		return
 		
 	if not player.is_on_floor():
+		return
+		
+	if Input.is_action_just_pressed("crouch"):
+		state_machine.change_state(crouch_walk_state)
 		return
 		
 	if Input.is_action_just_pressed("attack"):

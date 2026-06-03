@@ -4,6 +4,7 @@ extends State
 @export var jump_state: State
 @export var punch_state: State
 @export var sprint_state: State
+@export var crouch_state: State
 
 func enter() -> void:
 	pass
@@ -20,6 +21,10 @@ func physics_update(_delta: float) -> void:
 		
 	if Input.is_action_just_pressed("jump"):
 		state_machine.change_state(jump_state)
+		return
+		
+	if Input.is_action_just_pressed("crouch"):
+		state_machine.change_state(crouch_state)
 		return
 		
 	var input_dir := Input.get_vector("move_right", "move_left", "move_backward", "move_forward")
