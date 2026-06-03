@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://bdgho2c8xg4tl"]
+
+[ext_resource type="Texture2D" uid="uid://dyul6mob4m6tb" path="res://textures/grid_texture.jpg" id="1_qecln"]
+[ext_resource type="PackedScene" uid="uid://b83fbn0aei6ra" path="res://entities/player/scenes/player.tscn" id="2_cl5xt"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_cl5xt"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_xjeo2"]
+sky_material = SubResource("ProceduralSkyMaterial_cl5xt")
+
+[sub_resource type="Environment" id="Environment_hv6im"]
+background_mode = 2
+sky = SubResource("Sky_xjeo2")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qecln"]
+albedo_texture = ExtResource("1_qecln")
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[node name="Test" type="Node3D" unique_id=1012350781]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=503791399]
+environment = SubResource("Environment_hv6im")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1416527972]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Player" parent="." unique_id=1040654554 instance=ExtResource("2_cl5xt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.1114602)
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="." unique_id=764427446]
+material_override = SubResource("StandardMaterial3D_qecln")
+use_collision = true
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1193706157]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+use_collision = true
+size = Vector3(10, 1, 10)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGCombiner3D" unique_id=1878902087]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+size = Vector3(1, 3, 0.1)
