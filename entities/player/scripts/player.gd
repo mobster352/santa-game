@@ -14,6 +14,7 @@ var max_pitch:float
 @onready var camera_pitch_pivot: Node3D = %CameraPitchPivot
 @onready var collider: CollisionShape3D = %Collider
 @onready var crouch_collider: CollisionShape3D = %CrouchCollider
+@onready var interaction_label: Label = %InteractionLabel
 
 const WALK_SPEED:float = 4.5
 const SPRINT_SPEED:float = 6.0

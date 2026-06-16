@@ -1,0 +1,214 @@
+[gd_scene format=3 uid="uid://bp8vurtn35t34"]
+
+[ext_resource type="MeshLibrary" uid="uid://e37xmkxov0ml" path="res://mesh_libraries/house_tiles.meshlib" id="1_4t3tm"]
+[ext_resource type="Script" uid="uid://dx2nvky8ryykn" path="res://houses/house.gd" id="1_n8aba"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_hv6im"]
+load_path = "res://.godot/imported/grid_texture.jpg-4a2ae284d03ace85e31482a0f0359b80.s3tc.ctex"
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n8aba"]
+albedo_texture = SubResource("CompressedTexture2D_hv6im")
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4t3tm"]
+radius = 1.139079
+
+[node name="House1" type="Node3D" unique_id=600215492]
+script = ExtResource("1_n8aba")
+
+[node name="GridMaps" type="Node3D" parent="." unique_id=231370605]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 0)
+
+[node name="Floor" type="GridMap" parent="GridMaps" unique_id=649765079]
+mesh_library = ExtResource("1_4t3tm")
+cell_center_x = false
+cell_center_y = false
+cell_center_z = false
+data = {
+"cells": PackedInt32Array(65507, 65535, 655361, 65506, 65535, 655361, 65505, 65535, 655361, 65504, 65535, 655361, 65508, 65535, 655361, 65509, 65534, 655361, 65509, 65535, 655361, 65510, 65535, 655361, 65510, 65534, 655361, 65508, 65533, 655361, 65508, 65534, 655361, 65507, 65534, 655361, 65506, 65534, 655361, 65505, 65534, 655361, 65504, 65534, 655361, 65504, 65533, 655361, 65505, 65533, 655361, 65506, 65533, 655361, 65507, 65533, 655361, 65509, 65533, 655361, 65510, 65533, 655361, 65510, 0, 655361, 65509, 0, 655361, 65508, 0, 655361, 65507, 0, 655361, 65506, 0, 655361, 65505, 0, 655361, 65504, 0, 655361, 65511, 0, 655361, 65511, 1, 655361, 65511, 2, 655361, 65511, 3, 655361, 65511, 4, 655361, 65511, 65531, 655361, 65511, 65530, 655361, 65511, 65529, 655361, 65511, 65528, 655361, 65511, 65527, 655361, 65503, 65535, 655361, 65502, 65535, 655361, 65501, 65535, 655361, 65500, 65535, 655361, 65503, 65534, 655361, 65502, 65534, 655361, 65501, 65534, 655361, 65500, 65534, 655361, 65500, 65533, 655361, 65501, 65533, 655361, 65502, 65533, 655361, 65503, 65533, 655361, 65509, 65532, 655361, 65510, 65532, 655361, 65508, 65532, 655361, 65507, 65532, 655361, 65506, 65532, 655361, 65505, 65532, 655361, 65504, 65532, 655361, 65503, 65532, 655361, 65502, 65532, 655361, 65501, 65532, 655361, 65500, 65532, 655361, 65500, 65531, 655361, 65501, 65531, 655361, 65502, 65531, 655361, 65503, 65531, 655361, 65504, 65531, 655361, 65505, 65531, 655361, 65506, 65531, 655361, 65507, 65531, 655361, 65508, 65531, 655361, 65509, 65531, 655361, 65510, 65531, 655361, 65510, 65530, 655361, 65509, 65530, 655361, 65508, 65530, 655361, 65507, 65530, 655361, 65506, 65530, 655361, 65505, 65530, 655361, 65504, 65530, 655361, 65503, 65530, 655361, 65502, 65530, 655361, 65501, 65530, 655361, 65500, 65530, 655361, 65500, 65529, 655361, 65501, 65529, 655361, 65502, 65529, 655361, 65503, 65529, 655361, 65504, 65529, 655361, 65505, 65529, 655361, 65506, 65529, 655361, 65507, 65529, 655361, 65508, 65529, 655361, 65509, 65529, 655361, 65510, 65529, 655361, 65510, 65528, 655361, 65509, 65528, 655361, 65508, 65528, 655361, 65507, 65528, 655361, 65506, 65528, 655361, 65505, 65528, 655361, 65504, 65528, 655361, 65503, 65528, 655361, 65502, 65528, 655361, 65501, 65528, 655361, 65500, 65528, 655361, 65500, 65527, 655361, 65501, 65527, 655361, 65502, 65527, 655361, 65503, 65527, 655361, 65504, 65527, 655361, 65505, 65527, 655361, 65506, 65527, 655361, 65507, 65527, 655361, 65508, 65527, 655361, 65509, 65527, 655361, 65510, 65527, 655361, 65511, 65532, 655361, 65503, 0, 655361, 65502, 0, 655361, 65501, 0, 655361, 65500, 0, 655361, 65500, 1, 655361, 65501, 1, 655361, 65502, 1, 655361, 65503, 1, 655361, 65504, 1, 655361, 65505, 1, 655361, 65506, 1, 655361, 65507, 1, 655361, 65508, 1, 655361, 65509, 1, 655361, 65510, 1, 655361, 65510, 2, 655361, 65509, 2, 655361, 65508, 2, 655361, 65507, 2, 655361, 65506, 2, 655361, 65505, 2, 655361, 65504, 2, 655361, 65503, 2, 655361, 65502, 2, 655361, 65501, 2, 655361, 65500, 2, 655361, 65500, 3, 655361, 65501, 3, 655361, 65502, 3, 655361, 65503, 3, 655361, 65504, 3, 655361, 65505, 3, 655361, 65506, 3, 655361, 65507, 3, 655361, 65508, 3, 655361, 65509, 3, 655361, 65510, 3, 655361, 65510, 4, 655361, 65509, 4, 655361, 65508, 4, 655361, 65507, 4, 655361, 65506, 4, 655361, 65505, 4, 655361, 65504, 4, 655361, 65503, 4, 655361, 65502, 4, 655361, 65501, 4, 655361, 65500, 4, 655361, 65511, 65535, 655361, 65511, 65534, 655361, 65511, 65533, 655361, 65499, 5, 1048577, 65499, 4, 1048577, 65499, 3, 1048577, 65499, 2, 1048577, 65499, 1, 1048577, 65499, 0, 1048577, 65499, 65535, 1048577, 65499, 65534, 1048577, 65499, 65533, 1048577, 65499, 65532, 1048577, 65499, 65531, 1048577, 65499, 65530, 1048577, 65499, 65529, 1048577, 65499, 65528, 1048577)
+}
+
+[node name="OuterWall" type="GridMap" parent="GridMaps" unique_id=1421251600]
+mesh_library = ExtResource("1_4t3tm")
+cell_center_x = false
+cell_center_y = false
+cell_center_z = false
+data = {
+"cells": PackedInt32Array(65511, 65528, 1048579, 65510, 5, 3, 65501, 65527, 655362, 65502, 65527, 655362, 65503, 65527, 655362, 65509, 65527, 655362, 65510, 65527, 655362, 65511, 4, 1048578, 65509, 5, 2, 65508, 5, 2, 65506, 5, 2, 65505, 5, 2, 65501, 5, 2, 65499, 65527, 655363, 65498, 4, 1441795, 65499, 5, 2, 65500, 65527, 655362, 65498, 65528, 1441794, 65498, 65530, 1441794, 65498, 65531, 1441794, 65498, 65532, 1441794, 65498, 65535, 1441794, 65498, 0, 1441794, 65498, 1, 1441794, 65498, 2, 1441794, 65498, 3, 1441794, 65508, 65527, 655363, 65507, 65527, 655362, 65504, 65527, 655363, 65505, 65527, 655364, 65506, 65527, 655362, 65510, 65533, 3, 65511, 65534, 1048578, 65511, 65529, 1048578, 65511, 65530, 1048579, 65511, 65531, 1048578, 65511, 65532, 1048580, 65511, 1, 1048579, 65511, 0, 1048578, 65507, 4, 1441795, 65502, 4, 1441795, 65504, 5, 3, 65503, 5, 4, 65511, 2, 1048578, 65511, 3, 1048580, 65500, 5, 4, 65498, 65529, 1441796, 65498, 65534, 1441796, 65498, 65533, 1441796)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="InnerWall" type="GridMap" parent="GridMaps" unique_id=1195240167]
+mesh_library = ExtResource("1_4t3tm")
+cell_center_x = false
+cell_center_y = false
+cell_center_z = false
+data = {
+"cells": PackedInt32Array(65509, 0, 655362, 65508, 0, 655363, 65507, 65530, 1441794, 65506, 65530, 2, 65503, 65528, 1441794, 65503, 65529, 1441795, 65504, 65530, 2, 65507, 65532, 1441795, 65508, 65533, 2, 65509, 65533, 2, 65508, 65529, 655363, 65509, 65529, 655362, 65510, 65529, 655362, 65507, 65528, 1441794, 65510, 0, 655362, 65507, 1, 1441794, 65507, 3, 1441794, 65505, 2, 1048578, 65505, 3, 1048578, 65503, 0, 655363, 65502, 1, 1441794, 65502, 2, 1441794, 65505, 1, 1048579, 65504, 0, 655362, 65502, 3, 1441794)
+}
+
+[node name="Ceiling" type="GridMap" parent="GridMaps" unique_id=729959798]
+mesh_library = ExtResource("1_4t3tm")
+cell_center_x = false
+cell_center_y = false
+cell_center_z = false
+data = {
+"cells": PackedInt32Array(65499, 65527, 655360, 65499, 65528, 655360, 65499, 65529, 655360, 65499, 65530, 655360, 65499, 65531, 655360, 65499, 65532, 655360, 65499, 65533, 655360, 65499, 65534, 655360, 65499, 65535, 655360, 65499, 0, 655360, 65499, 1, 655360, 65499, 2, 655360, 65499, 3, 655360, 65499, 4, 655360, 65500, 65527, 655360, 65500, 65528, 655360, 65500, 65529, 655360, 65500, 65530, 655360, 65500, 65531, 655360, 65500, 65532, 655360, 65500, 65533, 655360, 65500, 65534, 655360, 65500, 65535, 655360, 65500, 0, 655360, 65500, 1, 655360, 65500, 2, 655360, 65500, 3, 655360, 65500, 4, 655360, 65501, 65527, 655360, 65501, 65528, 655360, 65501, 65529, 655360, 65501, 65530, 655360, 65501, 65531, 655360, 65501, 65532, 655360, 65501, 65533, 655360, 65501, 65534, 655360, 65501, 65535, 655360, 65501, 0, 655360, 65501, 1, 655360, 65501, 2, 655360, 65501, 3, 655360, 65501, 4, 655360, 65502, 65527, 655360, 65502, 65528, 655360, 65502, 65529, 655360, 65502, 65530, 655360, 65502, 65531, 655360, 65502, 65532, 655360, 65502, 65533, 655360, 65502, 65534, 655360, 65502, 65535, 655360, 65502, 0, 655360, 65502, 1, 655360, 65502, 2, 655360, 65502, 3, 655360, 65502, 4, 655360, 65503, 65527, 655360, 65503, 65528, 655360, 65503, 65529, 655360, 65503, 65530, 655360, 65503, 65531, 655360, 65503, 65532, 655360, 65503, 65533, 655360, 65503, 65534, 655360, 65503, 65535, 655360, 65503, 0, 655360, 65503, 1, 655360, 65503, 2, 655360, 65503, 3, 655360, 65503, 4, 655360, 65504, 65527, 655360, 65504, 65528, 655360, 65504, 65529, 655360, 65504, 65530, 655360, 65504, 65531, 655360, 65504, 65532, 655360, 65504, 65533, 655360, 65504, 65534, 655360, 65504, 65535, 655360, 65504, 0, 655360, 65504, 1, 655360, 65504, 2, 655360, 65504, 3, 655360, 65504, 4, 655360, 65505, 65527, 655360, 65505, 65528, 655360, 65505, 65529, 655360, 65505, 65530, 655360, 65505, 65531, 655360, 65505, 65532, 655360, 65505, 65533, 655360, 65505, 65534, 655360, 65505, 65535, 655360, 65505, 0, 655360, 65505, 1, 655360, 65505, 2, 655360, 65505, 3, 655360, 65505, 4, 655360, 65506, 65527, 655360, 65506, 65528, 655360, 65506, 65529, 655360, 65506, 65530, 655360, 65506, 65531, 655360, 65506, 65532, 655360, 65506, 65533, 655360, 65506, 65534, 655360, 65506, 65535, 655360, 65506, 0, 655360, 65506, 1, 655360, 65506, 2, 655360, 65506, 3, 655360, 65506, 4, 655360, 65507, 65527, 655360, 65507, 65528, 655360, 65507, 65529, 655360, 65507, 65530, 655360, 65507, 65531, 655360, 65507, 65532, 655360, 65507, 65533, 655360, 65507, 65534, 655360, 65507, 65535, 655360, 65507, 0, 655360, 65507, 1, 655360, 65507, 2, 655360, 65507, 3, 655360, 65507, 4, 655360, 65508, 65527, 655360, 65508, 65528, 655360, 65508, 65529, 655360, 65508, 65530, 655360, 65508, 65531, 655360, 65508, 65532, 655360, 65508, 65533, 655360, 65508, 65534, 655360, 65508, 65535, 655360, 65508, 0, 655360, 65508, 1, 655360, 65508, 2, 655360, 65508, 3, 655360, 65508, 4, 655360, 65509, 65527, 655360, 65509, 65528, 655360, 65509, 65529, 655360, 65509, 65530, 655360, 65509, 65531, 655360, 65509, 65532, 655360, 65509, 65533, 655360, 65509, 65534, 655360, 65509, 65535, 655360, 65509, 0, 655360, 65509, 1, 655360, 65509, 2, 655360, 65509, 3, 655360, 65509, 4, 655360, 65510, 65527, 655360, 65510, 65528, 655360, 65510, 65529, 655360, 65510, 65530, 655360, 65510, 65531, 655360, 65510, 65532, 655360, 65510, 65533, 655360, 65510, 65534, 655360, 65510, 65535, 655360, 65510, 0, 655360, 65510, 1, 655360, 65510, 2, 655360, 65510, 3, 655360, 65510, 4, 655360, 65511, 65527, 655360, 65511, 65528, 655360, 65511, 65529, 655360, 65511, 65530, 655360, 65511, 65531, 655360, 65511, 65532, 655360, 65511, 65533, 655360, 65511, 65534, 655360, 65511, 65535, 655360, 65511, 0, 655360, 65511, 1, 655360, 65511, 2, 655360, 65511, 3, 655360, 65511, 4, 655360)
+}
+
+[node name="Furniture" type="Node3D" parent="." unique_id=1557231829]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, 0)
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="Furniture" unique_id=1508080332]
+material_override = SubResource("StandardMaterial3D_n8aba")
+use_collision = true
+
+[node name="CSGBox3D41" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=60960847]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -71.097115, 0.5, -9.955278)
+size = Vector3(1.1333618, 1, 4.1054688)
+
+[node name="CSGBox3D55" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=131524581]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -64.601715, 0.5, -5.0575347)
+size = Vector3(2.6342773, 1, 5.4072266)
+
+[node name="CSGBox3D36" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=1801895586]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -63.32202, 0.5, -13.028482)
+size = Vector3(1, 1, 2)
+
+[node name="CSGBox3D37" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=296082270]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -53.819443, 0.5, -7.0012283)
+size = Vector3(1, 1, 3)
+
+[node name="CSGBox3D38" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=1816785452]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -52.474293, 1, -12.51387)
+size = Vector3(2, 2, 4)
+
+[node name="CSGBox3D47" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=694752066]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -54.05116, 0.5, 8.007368)
+size = Vector3(3, 1, 2)
+
+[node name="CSGBox3D48" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=476154378]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -54.05116, 0.5, 2.08181)
+size = Vector3(1, 1, 2)
+
+[node name="CSGBox3D49" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=2063142838]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -55.55116, 0.5, 9.007367)
+
+[node name="CSGBox3D50" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=2030540962]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -52.55116, 0.5, 9.007367)
+
+[node name="CSGBox3D53" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=934993919]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -66.515175, 0.5, 9.007367)
+
+[node name="CSGBox3D54" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=1284736334]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -63.500774, 0.5, 9.007367)
+
+[node name="CSGBox3D51" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=49517034]
+transform = Transform3D(-2.1855693e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855693e-07, -65.00847, 0.49999952, 8.036759)
+size = Vector3(3, 1, 2)
+
+[node name="CSGBox3D52" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=1044601864]
+transform = Transform3D(-2.1855693e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855693e-07, -64.99473, 0.49999952, 2.0707572)
+size = Vector3(1, 1, 2)
+
+[node name="CSGBox3D42" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=1754661209]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -69.46811, 0.5, 3.033414)
+size = Vector3(3, 1, 1)
+
+[node name="CSGBox3D43" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=2100944327]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -74.57567, 1, 8.533414)
+size = Vector3(2, 2, 2)
+
+[node name="CSGBox3D44" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=110849638]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -73.91578, 0.5, 3.033414)
+size = Vector3(5, 1, 1)
+
+[node name="CSGBox3D45" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=484911113]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -71.07567, 0.5, 6.033414)
+
+[node name="CSGBox3D46" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=1339274548]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -71.07567, 0.5, 0.033413887)
+
+[node name="CSGBox3D39" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=52498515]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -70.29802, 0.5000019, -16.994751)
+size = Vector3(1, 1, 9)
+
+[node name="CSGBox3D40" type="CSGBox3D" parent="Furniture/CSGCombiner3D" unique_id=194536445]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -75.29802, 0.5000019, -12.994751)
+size = Vector3(9, 1, 1)
+
+[node name="Areas" type="Node3D" parent="." unique_id=2123499718]
+
+[node name="Window1Area" type="Area3D" parent="Areas" unique_id=1524493003]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22608083, 0, -9)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Areas/Window1Area" unique_id=1704907704]
+shape = SubResource("SphereShape3D_4t3tm")
+
+[node name="Window1Area2" type="Area3D" parent="Areas" unique_id=166081731]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.22608083, 0, 5)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Areas/Window1Area2" unique_id=348896209]
+shape = SubResource("SphereShape3D_4t3tm")
+
+[node name="Window1Area3" type="Area3D" parent="Areas" unique_id=1257726505]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -15.22608, 0, 9.784218)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Areas/Window1Area3" unique_id=1915703485]
+shape = SubResource("SphereShape3D_4t3tm")
+
+[node name="Window1Area4" type="Area3D" parent="Areas" unique_id=1194900683]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -21.22608, 0, 9.784218)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Areas/Window1Area4" unique_id=1432252225]
+shape = SubResource("SphereShape3D_4t3tm")
+
+[node name="Window1Area8" type="Area3D" parent="Areas" unique_id=1281489141]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -13.146923, 0, -17.761398)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Areas/Window1Area8" unique_id=1354161394]
+shape = SubResource("SphereShape3D_4t3tm")
+
+[node name="Window1Area5" type="Area3D" parent="Areas" unique_id=7509800]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -25.76543, 0, -5.156436)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Areas/Window1Area5" unique_id=836228109]
+shape = SubResource("SphereShape3D_4t3tm")
+
+[node name="Window1Area6" type="Area3D" parent="Areas" unique_id=1635643819]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -25.76543, 0, -2.8326128)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Areas/Window1Area6" unique_id=1854587703]
+shape = SubResource("SphereShape3D_4t3tm")
+
+[node name="Window1Area7" type="Area3D" parent="Areas" unique_id=1298683304]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -25.76543, 0, -12.949614)
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Areas/Window1Area7" unique_id=1852915126]
+shape = SubResource("SphereShape3D_4t3tm")
+
+[connection signal="body_entered" from="Areas/Window1Area" to="." method="_on_window_area_body_entered"]
+[connection signal="body_exited" from="Areas/Window1Area" to="." method="_on_window_area_body_exited"]
+[connection signal="body_entered" from="Areas/Window1Area2" to="." method="_on_window_area_body_entered"]
+[connection signal="body_exited" from="Areas/Window1Area2" to="." method="_on_window_area_body_exited"]
+[connection signal="body_entered" from="Areas/Window1Area3" to="." method="_on_window_area_body_entered"]
+[connection signal="body_exited" from="Areas/Window1Area3" to="." method="_on_window_area_body_exited"]
+[connection signal="body_entered" from="Areas/Window1Area4" to="." method="_on_window_area_body_entered"]
+[connection signal="body_exited" from="Areas/Window1Area4" to="." method="_on_window_area_body_exited"]
+[connection signal="body_entered" from="Areas/Window1Area8" to="." method="_on_window_area_body_entered"]
+[connection signal="body_exited" from="Areas/Window1Area8" to="." method="_on_window_area_body_exited"]
+[connection signal="body_entered" from="Areas/Window1Area5" to="." method="_on_window_area_body_entered"]
+[connection signal="body_exited" from="Areas/Window1Area5" to="." method="_on_window_area_body_exited"]
+[connection signal="body_entered" from="Areas/Window1Area6" to="." method="_on_window_area_body_entered"]
+[connection signal="body_exited" from="Areas/Window1Area6" to="." method="_on_window_area_body_exited"]
+[connection signal="body_entered" from="Areas/Window1Area7" to="." method="_on_window_area_body_entered"]
+[connection signal="body_exited" from="Areas/Window1Area7" to="." method="_on_window_area_body_exited"]

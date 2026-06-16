@@ -20,7 +20,14 @@ height = 1.7910156
 radius = 0.43115234
 height = 1.1014404
 
-[node name="Player" type="CharacterBody3D" unique_id=1040654554]
+[sub_resource type="LabelSettings" id="LabelSettings_u3c1g"]
+font_size = 32
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="Player" type="CharacterBody3D" unique_id=1040654554 groups=["player"]]
 collision_layer = 2
 script = ExtResource("1_abrql")
 min_pitch_deg = -55.0
@@ -98,3 +105,30 @@ crouch_walk_state = NodePath("../CrouchWalk")
 script = ExtResource("11_u3c1g")
 walk_state = NodePath("../Walk")
 crouch_state = NodePath("../Crouch")
+
+[node name="UI" type="Control" parent="." unique_id=1445247876]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="InteractionLabel" type="Label" parent="UI" unique_id=1702241126]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -9.0
+offset_top = -22.5
+offset_right = 9.0
+offset_bottom = 22.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "E"
+label_settings = SubResource("LabelSettings_u3c1g")
