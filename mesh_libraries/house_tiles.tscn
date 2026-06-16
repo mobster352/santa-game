@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dwf6cvclne7km"]
+
+[ext_resource type="PackedScene" uid="uid://gmwvwugotr2t" path="res://assets/blender/house_kit/ceiling_001.glb" id="1_rcsqn"]
+[ext_resource type="PackedScene" uid="uid://dytabmev50b5w" path="res://assets/blender/house_kit/floor_001.glb" id="2_p7tkb"]
+[ext_resource type="PackedScene" uid="uid://b0h4eloisjlyq" path="res://assets/blender/house_kit/wall_001.glb" id="3_04w6j"]
+[ext_resource type="PackedScene" uid="uid://bt7mob6l65b30" path="res://assets/blender/house_kit/wall_corner_001.glb" id="4_v0c3o"]
+[ext_resource type="PackedScene" uid="uid://dif5ell0yn15e" path="res://assets/blender/house_kit/wall_window_001.glb" id="5_57c0x"]
+
+[node name="HouseTiles" type="Node3D" unique_id=240159890]
+
+[node name="ceiling_001" parent="." unique_id=369270869 instance=ExtResource("1_rcsqn")]
+
+[node name="floor_001" parent="." unique_id=1565577594 instance=ExtResource("2_p7tkb")]
+
+[node name="wall_001" parent="." unique_id=1224009180 instance=ExtResource("3_04w6j")]
+
+[node name="wall_corner_001" parent="." unique_id=1419223813 instance=ExtResource("4_v0c3o")]
+
+[node name="wall_window_001" parent="." unique_id=1614477869 instance=ExtResource("5_57c0x")]

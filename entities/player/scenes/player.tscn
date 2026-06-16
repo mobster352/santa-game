@@ -13,7 +13,7 @@
 [ext_resource type="Script" uid="uid://bktmcojp37rk5" path="res://entities/player/states/crouch_walk_state.gd" id="11_u3c1g"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_symyc"]
-radius = 0.42919922
+radius = 0.48046875
 height = 1.7910156
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_u3c1g"]
@@ -23,6 +23,7 @@ height = 1.1014404
 [node name="Player" type="CharacterBody3D" unique_id=1040654554]
 collision_layer = 2
 script = ExtResource("1_abrql")
+min_pitch_deg = -55.0
 
 [node name="Collider" type="CollisionShape3D" parent="." unique_id=822177160]
 unique_name_in_owner = true

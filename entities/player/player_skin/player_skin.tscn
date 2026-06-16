@@ -8,6 +8,49 @@
 [ext_resource type="Texture2D" uid="uid://11bsb0mogu71" path="res://assets/meshes/base characters/T_Eye_Brown.png" id="6_6vww2"]
 [ext_resource type="Texture2D" uid="uid://dtl2sydegvxau" path="res://assets/meshes/base hair rigged to head/T_Hair_1_BaseColor.png" id="7_0qkc4"]
 [ext_resource type="Texture2D" uid="uid://cnj2hb2or45ds" path="res://assets/meshes/base hair rigged to head/T_Hair_1_Normal.png" id="8_1grrv"]
+[ext_resource type="Animation" uid="uid://d3ke0q1m8dlj0" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Walk_Carry.res" id="9_apr4u"]
+[ext_resource type="Animation" uid="uid://dfleyt768ph8l" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/A_TPose.res" id="9_axt3n"]
+[ext_resource type="Animation" uid="uid://bs0vmfhjhl8v4" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Chest_Open.res" id="10_8l5nw"]
+[ext_resource type="Animation" uid="uid://blb01560w5y15" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/ClimbUp_1m_RM.res" id="11_cqvxc"]
+[ext_resource type="Animation" uid="uid://dhkffaybhh3xh" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Consume.res" id="12_17eaj"]
+[ext_resource type="Animation" uid="uid://xkaejyv4vwvd" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Farm_Harvest.res" id="13_vphxl"]
+[ext_resource type="Animation" uid="uid://cysusueo885bk" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Farm_PlantSeed.res" id="14_xuglu"]
+[ext_resource type="Animation" uid="uid://b1fwnrquhmptd" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Farm_Watering.res" id="15_aww0c"]
+[ext_resource type="Animation" uid="uid://cgrwsuwnd2j7a" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Hit_Knockback.res" id="16_ndbo7"]
+[ext_resource type="Animation" uid="uid://2tfe1oexgj7s" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Hit_Knockback_RM.res" id="17_aa3gr"]
+[ext_resource type="Animation" uid="uid://jetlxquwqn1o" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Idle_FoldArms.res" id="18_3cj03"]
+[ext_resource type="Animation" uid="uid://bgki2vcxt2qh4" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Idle_Lantern.res" id="19_yrhst"]
+[ext_resource type="Animation" uid="uid://c0ums0f77ubgs" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Idle_No.res" id="20_6fhwc"]
+[ext_resource type="Animation" uid="uid://ck5ovj2l02rld" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Idle_Rail.res" id="21_jo0pw"]
+[ext_resource type="Animation" uid="uid://be8lcnmjw1swb" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Idle_Rail_Call.res" id="22_j63hw"]
+[ext_resource type="Animation" uid="uid://b1iphyocicshs" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Idle_Shield.res" id="23_q6wy2"]
+[ext_resource type="Animation" uid="uid://bvr0q48khi5ft" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Idle_Shield_Break.res" id="24_ofkxw"]
+[ext_resource type="Animation" uid="uid://ctwcatmbbd623" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Idle_TalkingPhone.res" id="25_wd5sp"]
+[ext_resource type="Animation" uid="uid://di7qcpdyhnj7n" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/LayToIdle.res" id="26_0grl2"]
+[ext_resource type="Animation" uid="uid://d3oprqd8wftym" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Melee_Hook.res" id="27_4a6pp"]
+[ext_resource type="Animation" uid="uid://cpesbmyeeyjcy" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Melee_Hook_Rec.res" id="28_ngw0m"]
+[ext_resource type="Animation" uid="uid://6ixi4r026c5c" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/NinjaJump_Idle.res" id="29_kfxo1"]
+[ext_resource type="Animation" uid="uid://bjchw27gqwy4q" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/NinjaJump_Land.res" id="30_3v4an"]
+[ext_resource type="Animation" uid="uid://7phaj0rxuyl8" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/NinjaJump_Start.res" id="31_nvqx7"]
+[ext_resource type="Animation" uid="uid://dqsbxef824y4q" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/OverhandThrow.res" id="32_uxcrk"]
+[ext_resource type="Animation" uid="uid://bjljkfrbv3g45" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Shield_Dash_RM.res" id="33_e5d41"]
+[ext_resource type="Animation" uid="uid://c0donerhrdc6v" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Shield_OneShot.res" id="34_8eien"]
+[ext_resource type="Animation" uid="uid://deeux4mllohc6" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Slide.res" id="35_h6g0e"]
+[ext_resource type="Animation" uid="uid://ecjt66w4as6a" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Slide_Exit.res" id="36_lmd00"]
+[ext_resource type="Animation" uid="uid://bmqnebejcing" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Slide_Start.res" id="37_gl1tb"]
+[ext_resource type="Animation" uid="uid://v5ajwm5u0lop" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Sword_Block.res" id="38_7ug7y"]
+[ext_resource type="Animation" uid="uid://c4u3tty8tftvd" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Sword_Dash_RM.res" id="39_xesmm"]
+[ext_resource type="Animation" uid="uid://blbbbuavhelei" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Sword_Regular_A.res" id="40_lhsf7"]
+[ext_resource type="Animation" uid="uid://dw1hp4x30e1n8" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Sword_Regular_A_Rec.res" id="41_xnuk2"]
+[ext_resource type="Animation" uid="uid://c18kmrx1wny2d" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Sword_Regular_B.res" id="42_oncnj"]
+[ext_resource type="Animation" uid="uid://kyobu742gcg4" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Sword_Regular_B_Rec.res" id="43_dyyxs"]
+[ext_resource type="Animation" uid="uid://6cljru622mne" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Sword_Regular_C.res" id="44_6rbxj"]
+[ext_resource type="Animation" uid="uid://hh15brs1ndst" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Sword_Regular_Combo.res" id="45_re0il"]
+[ext_resource type="Animation" uid="uid://dmes66gwb2nb4" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/TreeChopping.res" id="46_owhgx"]
+[ext_resource type="Animation" uid="uid://chjwgad05xfa2" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Yes.res" id="48_fbla0"]
+[ext_resource type="Animation" uid="uid://blb6ffo18mewi" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Zombie_Idle.res" id="49_yy0ht"]
+[ext_resource type="Animation" uid="uid://baayor3j1185q" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Zombie_Scratch.res" id="50_bwvx3"]
+[ext_resource type="Animation" uid="uid://ba3gg2ja5rhvc" path="res://assets/meshes/Universal Animation Library 2[Standard]/Unreal-Godot/Zombie_Walk_Fwd.res" id="51_hynwv"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kbjn6"]
 resource_name = "MI_Superhero_Male"
@@ -1145,6 +1188,53 @@ bind/64/name = &"ball_leaf_r"
 bind/64/bone = -1
 bind/64/pose = Transform3D(-1.0000001, -6.9388815e-18, -1.05879106e-22, 4.879777e-15, -1.490116e-07, 0.9999998, -5.8207675e-11, 1.0000001, -3.5527135e-15, -0.08900002, -0.19209997, -0.015200032)
 
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0cnk0"]
+_data = {
+&"A_TPose": ExtResource("9_axt3n"),
+&"Chest_Open": ExtResource("10_8l5nw"),
+&"ClimbUp_1m_RM": ExtResource("11_cqvxc"),
+&"Consume": ExtResource("12_17eaj"),
+&"Farm_Harvest": ExtResource("13_vphxl"),
+&"Farm_PlantSeed": ExtResource("14_xuglu"),
+&"Farm_Watering": ExtResource("15_aww0c"),
+&"Hit_Knockback": ExtResource("16_ndbo7"),
+&"Hit_Knockback_RM": ExtResource("17_aa3gr"),
+&"Idle_FoldArms": ExtResource("18_3cj03"),
+&"Idle_Lantern": ExtResource("19_yrhst"),
+&"Idle_No": ExtResource("20_6fhwc"),
+&"Idle_Rail": ExtResource("21_jo0pw"),
+&"Idle_Rail_Call": ExtResource("22_j63hw"),
+&"Idle_Shield": ExtResource("23_q6wy2"),
+&"Idle_Shield_Break": ExtResource("24_ofkxw"),
+&"Idle_TalkingPhone": ExtResource("25_wd5sp"),
+&"LayToIdle": ExtResource("26_0grl2"),
+&"Melee_Hook": ExtResource("27_4a6pp"),
+&"Melee_Hook_Rec": ExtResource("28_ngw0m"),
+&"NinjaJump_Idle": ExtResource("29_kfxo1"),
+&"NinjaJump_Land": ExtResource("30_3v4an"),
+&"NinjaJump_Start": ExtResource("31_nvqx7"),
+&"OverhandThrow": ExtResource("32_uxcrk"),
+&"Shield_Dash_RM": ExtResource("33_e5d41"),
+&"Shield_OneShot": ExtResource("34_8eien"),
+&"Slide": ExtResource("35_h6g0e"),
+&"Slide_Exit": ExtResource("36_lmd00"),
+&"Slide_Start": ExtResource("37_gl1tb"),
+&"Sword_Block": ExtResource("38_7ug7y"),
+&"Sword_Dash_RM": ExtResource("39_xesmm"),
+&"Sword_Regular_A": ExtResource("40_lhsf7"),
+&"Sword_Regular_A_Rec": ExtResource("41_xnuk2"),
+&"Sword_Regular_B": ExtResource("42_oncnj"),
+&"Sword_Regular_B_Rec": ExtResource("43_dyyxs"),
+&"Sword_Regular_C": ExtResource("44_6rbxj"),
+&"Sword_Regular_Combo": ExtResource("45_re0il"),
+&"TreeChopping": ExtResource("46_owhgx"),
+&"Walk_Carry": ExtResource("9_apr4u"),
+&"Yes": ExtResource("48_fbla0"),
+&"Zombie_Idle": ExtResource("49_yy0ht"),
+&"Zombie_Scratch": ExtResource("50_bwvx3"),
+&"Zombie_Walk_Fwd": ExtResource("51_hynwv")
+}
+
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_apr4u"]
 animation = &"Crouch_Fwd"
 
@@ -1260,69 +1350,69 @@ nodes/MovementStateMachine/node = SubResource("AnimationNodeStateMachine_5dmjg")
 nodes/MovementStateMachine/position = Vector2(-60, 140)
 node_connections = [&"output", 0, &"MovementStateMachine"]
 
-[node name="PlayerSkin" unique_id=872045055 instance=ExtResource("1_cbqir")]
+[node name="PlayerSkin" unique_id=1525292528 instance=ExtResource("1_cbqir")]
 script = ExtResource("2_apr4u")
 
-[node name="GeneralSkeleton" parent="Armature" parent_id_path=PackedInt32Array(694994379) index="0" unique_id=2137535576]
-bones/1/position = Vector3(0.008738617, 0.9154281, -0.056627125)
-bones/1/rotation = Quaternion(0.049591772, -0.001109719, 0.022343399, 0.99851906)
-bones/3/rotation = Quaternion(0.16225569, 0.06930459, -0.01780694, 0.9841509)
-bones/4/rotation = Quaternion(0.15669625, 0.21273938, 0.018363457, 0.9642879)
-bones/5/rotation = Quaternion(-0.15848282, -0.14200279, -0.022994012, 0.9768263)
-bones/6/rotation = Quaternion(-0.0293996, -0.14379022, -0.0042293826, 0.9891623)
-bones/7/rotation = Quaternion(0.51095456, 0.48878747, 0.4888057, -0.5109611)
-bones/8/rotation = Quaternion(-0.05976005, 0.9096252, -0.41104892, 0.0070405826)
-bones/9/rotation = Quaternion(0.49548757, -0.45770276, 0.50754035, 0.53610003)
-bones/10/rotation = Quaternion(0.12024974, 0.69903094, 0.056890048, 0.702609)
-bones/11/rotation = Quaternion(0.62959725, -4.0978197e-08, -4.1425233e-06, 0.77692175)
-bones/12/rotation = Quaternion(0.6233416, -4.3213373e-07, -4.3511395e-06, 0.78194976)
-bones/13/rotation = Quaternion(0.6233412, -5.9604645e-08, -4.708767e-06, 0.78195)
-bones/15/rotation = Quaternion(0.62889445, -0.029734803, -4.470349e-06, 0.77692205)
-bones/16/rotation = Quaternion(0.622733, -0.02755465, -4.3809414e-06, 0.7819491)
-bones/17/rotation = Quaternion(0.6226684, -0.028961439, -4.529954e-06, 0.7819497)
-bones/19/rotation = Quaternion(0.6630006, -0.0445298, 0.07369399, 0.7436508)
-bones/20/rotation = Quaternion(0.62036675, -0.062293913, 0.015573293, 0.78167903)
-bones/21/rotation = Quaternion(0.6219214, -0.042051706, -4.6789646e-06, 0.78194976)
-bones/23/rotation = Quaternion(0.6291978, -0.02241401, -4.3809414e-06, 0.77692205)
-bones/24/rotation = Quaternion(0.6229473, -0.022176076, -4.529953e-06, 0.7819494)
-bones/25/rotation = Quaternion(0.622898, -0.023505501, -4.2319293e-06, 0.7819498)
-bones/27/rotation = Quaternion(-0.123819366, 0.7195232, 0.20183563, 0.6528535)
-bones/28/rotation = Quaternion(0.18180719, 0.110124454, 0.060063057, 0.97530055)
-bones/29/rotation = Quaternion(0.59942985, 0.2739656, 0.19463238, 0.7264606)
-bones/30/scale = Vector3(1.0001457, 1.0004878, 1.0005834)
-bones/31/rotation = Quaternion(0.50970024, -0.4900968, -0.49011296, -0.5097059)
-bones/32/rotation = Quaternion(-0.058795832, 0.8938329, -0.44446355, -0.007612872)
-bones/33/rotation = Quaternion(0.40654743, 0.623571, -0.542073, 0.38991705)
-bones/34/rotation = Quaternion(0.17276858, -0.7195974, -0.10874544, 0.66370565)
-bones/35/rotation = Quaternion(0.62959665, -2.1606684e-07, 4.2021275e-06, 0.77692217)
-bones/36/rotation = Quaternion(0.6233419, 8.1583846e-07, 3.7252898e-06, 0.78194934)
-bones/37/rotation = Quaternion(0.62334144, 1.1175871e-07, 5.4836273e-06, 0.78194976)
-bones/38/rotation = Quaternion(1.9557778e-08, 1, -1.7506343e-09, -8.7456776e-08)
-bones/39/rotation = Quaternion(0.6288947, 0.0297348, 4.470349e-06, 0.7769218)
-bones/40/rotation = Quaternion(0.6227322, 0.027554542, 4.082918e-06, 0.7819497)
-bones/41/rotation = Quaternion(0.6226689, 0.02896164, 4.619361e-06, 0.7819493)
-bones/43/rotation = Quaternion(0.6630009, 0.04452975, -0.073694415, 0.7436505)
-bones/44/rotation = Quaternion(0.6203663, 0.062294297, -0.015573293, 0.7816794)
-bones/45/rotation = Quaternion(0.6219217, 0.04205211, 4.1127205e-06, 0.7819496)
+[node name="GeneralSkeleton" parent="Armature" parent_id_path=PackedInt32Array(1654605637) index="0" unique_id=1607691807]
+bones/1/position = Vector3(0.0053169443, 0.87717235, -0.08649441)
+bones/1/rotation = Quaternion(-0.04628033, -0.11588846, -0.005405691, 0.9921687)
+bones/3/rotation = Quaternion(0.09260246, 0.000112654714, 0.00025388045, 0.99570316)
+bones/4/rotation = Quaternion(0.092602395, 0.00032065847, 0.00024720546, 0.9957031)
+bones/5/rotation = Quaternion(-0.09260248, -0.00021697924, -0.0002602538, 0.9957031)
+bones/6/rotation = Quaternion(0.07725409, 0.0957206, 0.007964551, 0.99237394)
+bones/7/rotation = Quaternion(0.48748106, 0.52661544, 0.52638143, -0.4560275)
+bones/8/rotation = Quaternion(-0.06222128, 0.8176802, -0.5722163, 0.00980104)
+bones/9/rotation = Quaternion(0.18998532, -0.651041, 0.18306458, 0.7117153)
+bones/10/rotation = Quaternion(0.09913024, 0.70686626, 0.0629003, 0.69753635)
+bones/11/rotation = Quaternion(0.62823355, 3.3527616e-08, -0.0008761586, 0.7780244)
+bones/12/rotation = Quaternion(0.6247114, 0.00085117284, 0.00018310544, 0.78085524)
+bones/13/rotation = Quaternion(0.62334144, -2.2351742e-07, -4.4703484e-06, 0.78194976)
+bones/15/rotation = Quaternion(0.5976042, -0.028255476, 0.0013405978, 0.8012921)
+bones/16/rotation = Quaternion(0.653175, -0.030310193, -0.00021886823, 0.7566)
+bones/17/rotation = Quaternion(0.6226684, -0.02896152, -4.440547e-06, 0.78194976)
+bones/19/rotation = Quaternion(0.69894445, -0.046943955, 0.0725922, 0.70993197)
+bones/20/rotation = Quaternion(0.5814194, -0.0572719, 0.013154268, 0.8114792)
+bones/21/rotation = Quaternion(0.62192154, -0.042051844, -4.4703484e-06, 0.78194964)
+bones/23/rotation = Quaternion(0.6204277, -0.022101559, 0.00076264143, 0.78395176)
+bones/24/rotation = Quaternion(0.63166773, -0.023236278, -0.00016918778, 0.7748909)
+bones/25/rotation = Quaternion(0.6228983, -0.023505487, -4.50015e-06, 0.7819497)
+bones/27/rotation = Quaternion(-0.123819165, 0.7195233, 0.2018354, 0.65285325)
+bones/28/rotation = Quaternion(0.18180694, 0.11012423, 0.060063303, 0.9753006)
+bones/29/rotation = Quaternion(0.5994299, 0.27396563, 0.19463211, 0.7264606)
+bones/30/scale = Vector3(1.0001454, 1.0004877, 1.0005833)
+bones/31/rotation = Quaternion(0.53972095, -0.47448963, -0.47470158, -0.5081529)
+bones/32/rotation = Quaternion(0.089077465, 0.82466066, -0.5584877, -0.009565941)
+bones/33/rotation = Quaternion(0.29214105, 0.54285806, -0.20492761, 0.760239)
+bones/34/rotation = Quaternion(0.12024976, -0.69903094, -0.056890074, 0.702609)
+bones/35/rotation = Quaternion(0.6295971, 3.7252903e-08, 4.172325e-06, 0.7769218)
+bones/36/rotation = Quaternion(0.62334144, 1.825392e-07, 4.470348e-06, 0.7819497)
+bones/37/rotation = Quaternion(0.62334156, 1.00582824e-07, 4.2319293e-06, 0.78194964)
+bones/38/rotation = Quaternion(4.6566133e-09, 1, 4.295285e-08, -5.7654454e-08)
+bones/39/rotation = Quaternion(0.6288947, 0.029734796, 4.351139e-06, 0.77692175)
+bones/40/rotation = Quaternion(0.62273216, 0.027554482, 4.5001507e-06, 0.78194976)
+bones/41/rotation = Quaternion(0.62266874, 0.028961398, 4.3213377e-06, 0.78194946)
+bones/43/rotation = Quaternion(0.6630007, 0.044529956, -0.07369393, 0.7436508)
+bones/44/rotation = Quaternion(0.62036633, 0.06229363, -0.015572906, 0.7816794)
+bones/45/rotation = Quaternion(0.62192184, 0.04205143, 4.4703484e-06, 0.7819494)
 bones/46/rotation = Quaternion(-0.03375008, 0.99943036, 4.924054e-08, -5.6300305e-08)
-bones/47/rotation = Quaternion(0.62919754, 0.022413809, 4.053116e-06, 0.7769222)
-bones/48/rotation = Quaternion(0.6229477, 0.022176765, 3.874302e-06, 0.7819491)
-bones/49/rotation = Quaternion(0.622898, 0.023505904, 4.5597553e-06, 0.7819499)
-bones/50/rotation = Quaternion(-0.018857807, 0.9998222, -4.445192e-08, -2.672743e-07)
-bones/51/rotation = Quaternion(-0.12381993, -0.719523, -0.20183575, 0.6528534)
-bones/52/rotation = Quaternion(0.18180768, -0.1101245, -0.06006354, 0.9753005)
-bones/53/rotation = Quaternion(0.59942985, -0.27396563, -0.19463184, 0.7264607)
-bones/54/scale = Vector3(1.0001453, 1.0004876, 1.0005833)
-bones/55/rotation = Quaternion(0.00010898814, 0.6434389, 0.765339, 0.015581927)
-bones/56/rotation = Quaternion(0.007600949, 0.78854376, -0.614854, 0.009777383)
-bones/57/rotation = Quaternion(0.009033771, 0.6799346, -0.7317202, -0.046828352)
-bones/58/rotation = Quaternion(-3.599714e-08, 1, 8.940697e-08, 1.469705e-08)
-bones/60/rotation = Quaternion(0.00016381047, -0.22825776, 0.9733191, 0.023418717)
-bones/61/rotation = Quaternion(0.00084371504, 0.97370434, -0.22778706, 0.003480283)
-bones/62/rotation = Quaternion(0.0019709084, 0.84847, -0.52917075, -0.008553025)
-bones/63/rotation = Quaternion(-7.467449e-09, 0.99413127, 0.1081809, 6.179812e-08)
+bones/47/rotation = Quaternion(0.6291981, 0.022413792, 4.11272e-06, 0.7769218)
+bones/48/rotation = Quaternion(0.62294656, 0.022176204, 4.470349e-06, 0.7819501)
+bones/49/rotation = Quaternion(0.6228987, 0.02350526, 4.1723247e-06, 0.7819493)
+bones/50/rotation = Quaternion(-0.018857837, 0.9998222, -1.5216909e-08, -2.369153e-07)
+bones/51/rotation = Quaternion(-0.12381923, -0.7195234, -0.2018356, 0.6528533)
+bones/52/rotation = Quaternion(0.18180703, -0.11012423, -0.060063303, 0.97530067)
+bones/53/rotation = Quaternion(0.5994302, -0.2739653, -0.19463223, 0.7264605)
+bones/54/scale = Vector3(1.0001454, 1.0004876, 1.0005835)
+bones/55/rotation = Quaternion(-0.00077796273, 0.12214074, 0.98626107, -0.11122178)
+bones/56/rotation = Quaternion(0.016344335, 0.98224515, -0.14901444, 0.11279213)
+bones/57/rotation = Quaternion(-0.09455208, 0.7292354, -0.67767, 0.006254539)
+bones/58/rotation = Quaternion(4.664862e-08, 1, 5.9604645e-08, 2.7766912e-08)
+bones/60/rotation = Quaternion(0.0008066073, -0.110076316, 0.9872104, 0.11531823)
+bones/61/rotation = Quaternion(-0.028729849, 0.9289613, -0.080715075, -0.36012584)
+bones/62/rotation = Quaternion(0.17156829, 0.646951, -0.74297434, -0.0027946231)
+bones/63/rotation = Quaternion(-6.703263e-08, 1, 8.940697e-08, 2.1454163e-09)
 
-[node name="Mannequin" parent="Armature/GeneralSkeleton" index="0" unique_id=1801239524]
+[node name="Mannequin" parent="Armature/GeneralSkeleton" index="0" unique_id=786635866]
 visible = false
 
 [node name="SuperHero_Male" type="MeshInstance3D" parent="Armature/GeneralSkeleton" index="1" unique_id=1474859688]
@@ -1344,6 +1434,9 @@ skin = SubResource("Skin_b2gda")
 [node name="Hair_SimpleParted" type="MeshInstance3D" parent="Armature/GeneralSkeleton" index="5" unique_id=644486638]
 mesh = SubResource("ArrayMesh_jpr6h")
 skin = SubResource("Skin_4r8b2")
+
+[node name="AnimationPlayer" parent="." index="1" unique_id=888660059]
+libraries/Universal = SubResource("AnimationLibrary_0cnk0")
 
 [node name="AnimationTree" type="AnimationTree" parent="." index="2" unique_id=1936874579]
 unique_name_in_owner = true

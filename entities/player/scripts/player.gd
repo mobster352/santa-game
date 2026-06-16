@@ -15,9 +15,9 @@ var max_pitch:float
 @onready var collider: CollisionShape3D = %Collider
 @onready var crouch_collider: CollisionShape3D = %CrouchCollider
 
-const WALK_SPEED:float = 4.0
+const WALK_SPEED:float = 4.5
 const SPRINT_SPEED:float = 6.0
-const CROUCH_SPEED:float = 2.0
+const CROUCH_SPEED:float = 2.5
 
 const JUMP_VELOCITY:float = 4
 const ROTATION_SPEED:float = 8.0
